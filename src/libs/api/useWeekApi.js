@@ -22,7 +22,6 @@ const useWeekApi = ({ location, element }) => {
         const Data =
           data.records.locations[0].location[0].weatherElement[0].time;
         setElementData(Data);
-        console.log(Data);
       })
       .catch((error) => {
         console.error("Error fetching weather data:", error);

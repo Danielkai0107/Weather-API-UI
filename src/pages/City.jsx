@@ -54,10 +54,10 @@ const City = ({ handleCityClose, locationName }) => {
             <Time />
           </h2>
           <span className='city_main_line'></span>
-          <p className='city_main_outline'>
+          <div className='city_main_outline'>
             <img src={img2} alt="" />
             {loaded && dayData[0].parameterName}
-          </p>
+          </div>
           <p className='city_main_outline'>
             <img src={img3} alt="" />
             {loaded && `降雨-${dayData[1].parameterName}%`}

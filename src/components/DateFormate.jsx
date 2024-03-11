@@ -4,7 +4,7 @@ const DateFormate = ({ dateString }) => {
   const date = new Date(dateString);
   const weekDay = date.toLocaleDateString('zh-TW', { weekday: 'long' });
 
-  return <p>{weekDay}</p>;
+  return <span>{weekDay}</span>;
 };
 
 export default DateFormate;

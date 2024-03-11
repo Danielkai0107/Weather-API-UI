@@ -11,7 +11,6 @@ const App = () => {
   const handleCityOpen = (item) => {
     setCityOpen(true)
     setLocationName(item)
-    console.log(item);
   }
   const handleCityClose = () => {
     setCityOpen(false)
