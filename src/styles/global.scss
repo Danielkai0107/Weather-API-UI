@@ -1,0 +1,22 @@
+@import "./base/reset";
+@import "./mixin/rwd";
+@import "./mixin/tool";
+@import "./animations/animations";
+@import "./variable/variable";
+
+// components
+@import "./components/navbar";
+@import "./components/cityItem";
+
+// layout
+@import "./layout/city";
+@import "./layout/home";
+
+html {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/bgc.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

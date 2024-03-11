@@ -1,0 +1,68 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/bgc.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  &_container {
+    height: 100vh;
+    margin-left: 4rem;
+    padding: 5rem 6rem 0 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &_header {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .title {
+      h1 {
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 3px;
+      }
+      h2 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 200;
+        letter-spacing: 3px;
+      }
+    }
+    .avatar {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      span {
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+      }
+      figure {
+        @include size(2.5rem, 2.5rem);
+        border-radius: 2.5rem;
+        overflow: hidden;
+        background-image: url("../../images/avatar.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+  &_cityList {
+    height: calc(100vh - 12rem);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    overflow: auto;
+    padding-bottom: 5rem;
+    animation: fade 2s forwards;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
