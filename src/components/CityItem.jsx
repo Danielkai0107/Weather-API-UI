@@ -6,7 +6,6 @@ const CityItem = ({ item, handleCityOpen }) => {
 
   const dayData = useDayApi({ location: item.locationName });
   const loaded = dayData;
-  console.log(dayData);
   return (
     <ul className='cityItem' onClick={() => { handleCityOpen(item.locationName) }}>
       <img className='cityItem_bgc' src={item.image} alt="" />

@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { useWeekMerge } from "../merge/useWeekMerge";
+import { defaultWeather } from "../defaultWeather";
 
 const useWeekApi = ({ location, element }) => {
-  const [elementData, setElementData] = useState(null);
+  const [elementData, setElementData] = useState(defaultWeather);
 
   useEffect(() => {
     const Authorization = "CWB-56EF1CC4-5FBF-4E8F-B52B-10E28543341D";
@@ -21,6 +22,7 @@ const useWeekApi = ({ location, element }) => {
         const Data =
           data.records.locations[0].location[0].weatherElement[0].time;
         setElementData(Data);
+        console.log(Data);
       })
       .catch((error) => {
         console.error("Error fetching weather data:", error);
