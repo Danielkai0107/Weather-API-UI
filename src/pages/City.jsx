@@ -25,7 +25,6 @@ const City = ({ handleCityClose, locationName }) => {
   const weekWx = useWeekApi({ location: cityID, element: 'Wx' });
   const weekTemp = useWeekApi({ location: cityID, element: 'T' });
   const dayData = useDayApi({ location: cityID });
-
   const loaded = weekWx.length > 0 && weekTemp.length > 0 && dayData && locationName;
 
   const handleClickNext = () => {

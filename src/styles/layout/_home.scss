@@ -41,12 +41,19 @@
         font-weight: 300;
         letter-spacing: 2px;
       }
-      figure {
+      .myself {
         @include size(2.5rem, 2.5rem);
-        border-radius: 2.5rem;
         overflow: hidden;
         background-image: url("../../images/avatar.png");
         background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .figma {
+        @include size(2.5rem, 2.5rem);
+        overflow: hidden;
+        background-image: url("../../images/icon/figma.png");
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
       }

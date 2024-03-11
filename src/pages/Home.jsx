@@ -18,7 +18,8 @@ const Home = ({ handleCityOpen }) => {
           </section>
           <section className='avatar'>
             <Time />
-            <figure></figure>
+            <figure className='myself'></figure>
+            <a className='figma' href="https://www.figma.com/file/DkAa0lG987eAv43Vwft8BK/Weather?type=design&node-id=0%3A1&mode=design&t=x4XKOPK4ScoOyhIM-1"></a>
           </section>
         </header>
         <section className='home_cityList'>
